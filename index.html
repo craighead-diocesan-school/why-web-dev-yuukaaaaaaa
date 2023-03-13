@@ -1,21 +1,42 @@
-<h1> Why Web Dev? </h1>
-<a href="opportunities.html"> Web Dev Opportunities </a>
-<a href="other-careers.html"> Other Coding Careers </a>
-<p>
-  There are plenty of way to learn coding, but here are some reasons why we focus on web dev.
-</p>
+<body>
+  <header>
+    <h1> Why Web Dev?
+    </h1>
+  </header>
+  <nav>
+   <a href="opportunities.html"> Web Dev Opportunities </a>
+   <a href="other-careers.html"> Other Coding Careers 
+   </a>
+  </nav>
+  <main>
+   <p>
+   There are plenty of way to learn coding, but here are some reasons why we focus on web dev.
+   </p>
 
-<ul>
-  <li> You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript. </li>
-  <li> You can be creative with the visual aesthetic of your applications as well as solve problems in coding. </li>
-  <li> You can build useful applications to make money, help others, or just make your own life easier. </li>
-  <li> Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship. </li>
-</ul>
-<img src="html-logo.svg" alt="The logo for HTML">
-<style>
+   <ul>
+    <li> You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript. </li>
+    <li> You can be creative with the visual aesthetic of your applications as well as solve problems in coding. </li>
+    <li> You can build useful applications to make money, help others, or just make your own life easier. </li>
+    <li> Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship. </li>
+   </ul>
+   <img src="html-logo.svg" alt="The logo for HTML">
+ </main>
+ <style>
   * {
     font-family: sans-serif;
   }
+  body {
+    display: grid;
+    grid: " h    h    h  " 3em
+          " .    m    .  " auto
+          " f    f    f  " 5em
+          / 1fr  5fr  1fr;
+  }
+
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
 
   h1 {
     text-align: center;
@@ -42,4 +63,5 @@
   img {
     width: 20rem;
   }
-</style>
+ </style>
+</body>
